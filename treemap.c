@@ -186,7 +186,7 @@ Pair * nextTreeMap(TreeMap * tree) {
         return resultado->pair;
     } else {
         void *key = aux->pair->key;
-        while(aux->parent != NULL && tree->lower_than(aux->parent->pair->key, key) == 0){
+        while(aux->parent != NULL && tree->lower_than(aux->parent->pair->key, key) == 1){
             aux = aux->parent;
         }
         if(aux->parent == NULL)return NULL;
