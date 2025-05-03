@@ -179,5 +179,10 @@ Pair * firstTreeMap(TreeMap * tree) {
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
+    TreeNode* aux = tree->current;
+    if(aux == NULL)return NULL;
+    if(aux->right != NULL){
+        return minimum(aux->right);
+    }
     return NULL;
 }
