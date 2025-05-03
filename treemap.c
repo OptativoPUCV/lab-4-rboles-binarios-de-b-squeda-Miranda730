@@ -121,11 +121,14 @@ void removeNode(TreeMap * tree, TreeNode* node) {
         } else {
             nino = aux->right;
         }
-
-        if(padre->left == aux){
-            padre->left = nino;
-        }else {
-            padre->right = nino;
+        if(tree->root !=aux){
+            if(padre->left == aux){
+                padre->left = nino;
+            }else {
+                padre->right = nino;
+            }
+        } else {
+            tree->root = nino;
         }
         free(aux);
     }
