@@ -133,6 +133,10 @@ void removeNode(TreeMap * tree, TreeNode* node) {
             tree->root = nino;
         }
         free(aux);
+    } else {
+        TreeNode* minimo = minimum(aux->right);
+        node->pair = minimo->pair;
+        removeNode(tree, minimo);
     }
 }
 
