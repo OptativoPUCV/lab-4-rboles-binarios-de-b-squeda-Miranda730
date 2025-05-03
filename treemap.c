@@ -95,9 +95,9 @@ void removeNode(TreeMap * tree, TreeNode* node) {
 
     while(aux != NULL && aux != node){
         padre = aux;
-        if(tree->lower_than(node, aux)){
+        if(tree->lower_than(node->pair->key, aux->pair->key)){
             aux = aux->left;
-        } else if(tree->lower_than(aux, node)){
+        } else if(tree->lower_than(aux->pair->key, node->pair->key)){
             aux = aux->right;
         } else {
             return;
