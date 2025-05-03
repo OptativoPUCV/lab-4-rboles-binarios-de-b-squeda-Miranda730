@@ -94,3 +94,73 @@ Fri, May  2, 2025  9:35:03 PM:
  tests:  16|4
 total_score: 30/70
 327c1f7
+Fri, May  2, 2025  9:47:12 PM: 
+ treemap.c | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+Compilation failed
+In file included from test.c:4:0:
+treemap.c: In function 'removeNode':
+treemap.c:118:21: error: stray '\303' in program
+         TreeNode* niño = NULL;
+                     ^
+treemap.c:118:22: error: stray '\261' in program
+         TreeNode* niño = NULL;
+                      ^
+treemap.c:118:23: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'o'
+         TreeNode* niño = NULL;
+                       ^
+treemap.c:118:23: error: 'o' undeclared (first use in this function)
+treemap.c:118:23: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:120:15: error: stray '\303' in program
+             niño = aux->left;
+               ^
+treemap.c:120:16: error: stray '\261' in program
+             niño = aux->left;
+                ^
+treemap.c:120:13: error: unknown type name 'ni'
+             niño = aux->left;
+             ^~
+treemap.c:120:21: error: initialization makes integer from pointer without a cast [-Werror=int-conversion]
+             niño = aux->left;
+                     ^~~
+treemap.c:120:17: error: unused variable 'o' [-Werror=unused-variable]
+             niño = aux->left;
+                 ^
+treemap.c:122:15: error: stray '\303' in program
+             niño = aux->right;
+               ^
+treemap.c:122:16: error: stray '\261' in program
+             niño = aux->right;
+                ^
+treemap.c:122:13: error: unknown type name 'ni'
+             niño = aux->right;
+             ^~
+treemap.c:122:21: error: initialization makes integer from pointer without a cast [-Werror=int-conversion]
+             niño = aux->right;
+                     ^~~
+treemap.c:122:17: error: unused variable 'o' [-Werror=unused-variable]
+             niño = aux->right;
+                 ^
+treemap.c:126:29: error: stray '\303' in program
+             padre->left = niño;
+                             ^
+treemap.c:126:30: error: stray '\261' in program
+             padre->left = niño;
+                              ^
+treemap.c:126:27: error: 'ni' undeclared (first use in this function)
+             padre->left = niño;
+                           ^~
+treemap.c:126:31: error: expected ';' before 'o'
+             padre->left = niño;
+                               ^
+treemap.c:128:30: error: stray '\303' in program
+             padre->right = niño;
+                              ^
+treemap.c:128:31: error: stray '\261' in program
+             padre->right = niño;
+                               ^
+treemap.c:128:32: error: expected ';' before 'o'
+             padre->right = niño;
+                                ^
+cc1.exe: all warnings being treated as errors
+de0f28b
